@@ -2,6 +2,6 @@
 git commands
 
 
-**git reset 
+** git reset 
 
 # git remove untracked file from local
