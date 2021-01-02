@@ -19,5 +19,12 @@ git log --oneline -S"OBJECTIVES"
 
 git log --oneline -S"OBJECTIVES"  --patch 
 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+formating of log commaND
+
+git log --pretty=format: "hello %an"
+
+each commit its show log commands 
 
 
