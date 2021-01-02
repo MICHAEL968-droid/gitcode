@@ -1,0 +1,23 @@
+git log --oneline stat
+
+git log --oneline patch 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+How to fliter the history 
+
+git log --oneline --author= "rajeev" 
+git log --oneline --after="2020-12-19" 
+git log --oneline --after="yesterday"
+git log --oneline --after="one week ago"
+
+filter usin search 
+git log --oneline --grep="GUI"
+
+>> using function 
+
+git log --oneline -S"OBJECTIVES" 
+
+git log --oneline -S"OBJECTIVES"  --patch 
+
+
+
