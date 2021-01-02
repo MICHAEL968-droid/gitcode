@@ -1,1 +1,16 @@
 
+git reset 
+git restore  --staged file.rb file2.rb
+
+
+DISCARDING local changes
+remove or undo local changes
+git clean -fd
+
+git deleted  file 
+git rm  file.rb
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+git restore --source=HEAD~1 file.js
+
