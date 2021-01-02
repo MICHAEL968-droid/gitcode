@@ -30,9 +30,26 @@ git log --pretty=format: "hello %an  %h on %cd" //git log documentation
  // %cd current date  
  
 
-each commit its show log commands   
+each commit its show log commands  
+
+git log --pretty=format: "%Cgreen% hello %an  %h on %cd" 
  
 
+>>> aliases 
+ how to set alias 
+ 
+ git config --global alias.lg "log --pretty=format: '%an commited %h' " 
 
-
-
+ git config --global -e
+ 
+ 
+ git lg 
+ 
+ 
+ >> resorter or unstaged changes 
+ 
+ git config --global alias.unstage "restore --staged ."
+ 
+ git unstage 
+ 
+ 
