@@ -68,5 +68,72 @@ git diff HEAD~2 HEAD --name-status
  
  HEAD  ->  MASTER  ->  commit ->>> pointed to the commit 
  
- commit 
+ finding bugs using commits
  
+ git bisect good b5c11cf3bd7c6aba7cafb7fcb4b5ec11222fcd9c
+ show 
+ 
+ 
+ this is bad commit
+ 
+ commit b5c11cf3bd7c6aba7cafb7fcb4b5ec11222fcd9c 
+ (HEAD -> templates, origin/templates, refs/bisect/good-b5c11cf3bd7c6aba7cafb7fcb4b5ec11222fcd9c, refs/bisect/bad) 
+ 
+ 
+ git bisect good
+in bisect command we see the bad commits  
+
+>>>>>>>>>>.
+
+finding contributers using   # shortlong 
+
+git shortlog
+
+
+git shortlog -n -s -e ///number of commits per author
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Viewing the history of file 
+
+git log file.rb 
+
+git log --online file.rb 
+git log --oneline --stat file.rb
+
+
+Restoring a deleted file 
+
+git rm file.rb
+
+for  delete file 
+git log --oneline -- file.
+
+
+for restoring  file 
+git checkout 06421e2 file.rb
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+BLAME TOOL
+
+git blame file.rb
+git blame -2 file.rb
+
+
+
+Tagging 
+
+git tag v1.0 07et2 
+for removig 
+git checkout tagname
+
+git tag -a v1.1 -m "my version"
+deleting a tag 
+git tag -d tagname 
+ 
+ 
+
+
+
