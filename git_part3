@@ -33,6 +33,17 @@ git log --pretty=format: "hello %an  %h on %cd" //git log documentation
 each commit its show log commands  
 
 git log --pretty=format: "%Cgreen% hello %an  %h on %cd" 
+
+
+
+>>>>> >>>
+git diff HEAD~2 HEAD audience.txt 
+
+
+git diff HEAD~2 HEAD --name-only 
+git diff HEAD~2 HEAD --name-status
+
+
  
 
 >>> aliases 
