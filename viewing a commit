@@ -1,1 +1,37 @@
 git show
+
+git log --oneline 
+
+for viewing last commit and step commit 
+  git show HEAD~1 // 
+  
+  diff --git a/rajeev/settings.py b/rajeev/settings.py
+index 89dd3fe..b6908c7 100644
+--- a/rajeev/settings.py
++++ b/rajeev/settings.py
+@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
+ For the full list of settings and their values, see
+ https://docs.djangoproject.com/en/3.1/ref/settings/
+ """
+-
++import os
+ from pathlib import Path
+ 
+ # Build paths inside the project like this: BASE_DIR / 'subdir'.
+@@ -54,7 +54,7 @@ ROOT_URLCONF = 'rajeev.urls'
+ TEMPLATES = [
+     {
+         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+-        'DIRS': [templates],
++        'DIRS': ['templates'],
+         'APP_DIRS': True,
+         'OPTIONS': {
+             'context_processors': [
+diff --git a/rajeev/urls.py b/rajeev/urls.py
+index 1e2d510..c4e9eb5 100644
+--- a/rajeev/urls.py
++++ b/rajeev/urls.py
+@@ -15,8 +15,11 @@ Including another URLconf
+
+>>>>>>>>>>
+git ls-tree
