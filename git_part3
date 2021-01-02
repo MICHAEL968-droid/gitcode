@@ -64,3 +64,9 @@ git diff HEAD~2 HEAD --name-status
  git unstage 
  
  
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ 
+ HEAD  ->  MASTER  ->  commit ->>> pointed to the commit 
+ 
+ commit 
+ 
