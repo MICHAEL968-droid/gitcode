@@ -1,1 +1,8 @@
+creating a branch 
 
+git branch first 
+git branch -m bugfix bugfix/signup-form 
+
+
+for deleting 
+git branch -d  bugfix/signup-form 
