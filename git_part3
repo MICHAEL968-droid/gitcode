@@ -24,7 +24,15 @@ git log --oneline -S"OBJECTIVES"  --patch
 formating of log commaND
 
 git log --pretty=format: "hello %an"
+git log --pretty=format: "hello %an  %h on %cd" //git log documentation       
+ //author name 
+ // %h hashses 
+ // %cd current date  
+ 
 
-each commit its show log commands 
+each commit its show log commands   
+ 
+
+
 
 
