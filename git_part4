@@ -6,3 +6,73 @@ git branch -m bugfix bugfix/signup-form
 
 for deleting 
 git branch -d  bugfix/signup-form 
+
+>>>>>>>>>>>>>>>>>>
+git switch branch
+
+git branch -m bugfix bugfix/signup-form 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+show me the branch which is in local branch but not in master 
+
+git log master..bugfix/signup-form
+
+git diff master .. bugfix/signup-forms
+
+>>>>>>>>>>>>>>>>>>>>>>>
+git stash 
+its just work for modified file 
+git stash push -m "added stash"
+for untracked file 
+
+git stash push -am "My new stash"
+
+git stash list 
+
+git switch bugfix/signup-form 
+
+git switch master
+
+git stash show 1 
+
+git stash apply 1 // on working directory
+
+git stash drop 1 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Merging --- bring changes one branch to another branch 
+fast way merges  // in this local branch is become a master branch 
+
+ > b > b > bm > b > ba   if brnaches have not diverged 
+ > b > b > b > b > bm
+ 
+3 way merges
+//if branches have merged 
+
+>>merging in master //first checkout in master 
+git merge bugfix/signup-form
+
+
+skip the fast forward merge
+>>>git merge --no-ff bugfix/login-form
+ pros of ff 
+ true reflection of history 
+ cons 
+ pollute the history 
+git config --global ff no
+
+>>three wayy merges 
+changes in local branch 
+then go to master 
+git merge feature/change-password 
+
+>>>viewied merged and unmerged branch 
+
+git branch --merged 
+
+git branch -d bugfix/login-form
+
+git branch --no-merged 
+
