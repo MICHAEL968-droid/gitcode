@@ -76,3 +76,60 @@ git branch -d bugfix/login-form
 
 git branch --no-merged 
 
+Merge tools 
+Kdiff
+P4 merge 
+
+>>> set config of merge tool 
+git config --global merge.tool p4merge 
+
+git config --global mergetool.p4merge.path "path/of p4tool"
+
+
+aborting a merge or conflict 
+git merge bugfix/change-password 
+git merge --abort 
+
+
+undoing a faulty merge 
+
+soft 
+mixed 
+hard 
+
+working >> staging area >> last snapshot 
+
+git reset --soft HEAD~1  /// only touch the last snapshot / but not chnages apply in staging are aor workig dir 
+
+git reset --mixed HEAD~1 // touch staging area 
+
+git reset --hard HEAD~1 // touch the working dir 
+git revert -m 1 HEAD 
+
+
+>>>>>>>>>>>>>>>>>>>> 
+squash merging //only used for short hotfix or bad commtis 
+
+on master 
+git merge --squash bugfix/photo-upload 
+
+then remove local merge branch 
+git branch -D bugfix/photo-upload 
+
+
+>>>>>>>>>>>>>>>>>>>>.Rebasing 
+
+new  feature branch 
+git switch -C feature/shopping-cart 
+
+created a commit 
+ now switch on to master branch 
+and create commit          
+not master have a commit   |  \
+and local have commit      |    \
+                           *     *
+                           M      L
+ git switch feature/shopping-cart 
+ git rebase master
+ 
+ 
